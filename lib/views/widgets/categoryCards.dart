@@ -1,3 +1,4 @@
+import 'package:first_flutter_task/data/constants.dart';
 import 'package:flutter/material.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -18,17 +19,16 @@ class CategoryCard extends StatelessWidget {
         vertical: 12,
       ),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: isSelected ? Colors.blue : Colors.white,
         borderRadius: BorderRadius.circular(25),
         border: Border.all(
-          color: Colors.grey.shade300,
+          color: isSelected ? Colors.blue : Colors.grey.shade300,
         ),
       ),
       child: Text(
         title,
-        style: const TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.w500,
+        style: KTextStyle.filtersText.copyWith(
+          color: isSelected ? Colors.white : Colors.black,
         ),
       ),
     );

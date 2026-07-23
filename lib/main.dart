@@ -1,4 +1,5 @@
 import 'package:first_flutter_task/views/pages/homePage.dart';
+import 'package:first_flutter_task/views/widgetTree.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const HomePage(),
+      home: const WidgetTree(),
     );
   }
 }
